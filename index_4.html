@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>my_site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="site_header">
+            <img src="logo.svg" alt="Логотип">
+            <nav>
+                <ul class="head">
+                    <li><a href="index_1.html">Главная</a></li>
+                    <li><a href=index_2.html>О врачах</a></li>
+                    <li><a href=index_3.html>Услуги</a></li>
+                    <li><a class = "active" href="index_4.html">Запись на прием</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <p class="text_2">Заполните форму для записи на прием:</p>
+
+    <div class="box_4">
+        <form>
+            <p>
+                <label class="text_3" for="name">Имя пациента:</label>
+                <input class="sel_1" type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+            </p>
+
+            <p>
+                <label class="text_3" for="birthdate">Дата рождения:</label>
+                <input class="sel_1" type="date" id="birthdate" name="birthdate" required>
+            </p>
+
+            <p class="text_3">
+                Пол:
+                <label class="gen"><input type="radio" name="gender" value="male">Мужской</label>
+                <label class="gen" style="color: #E91E63;"><input type="radio" name="gender"
+                        value="female">Женский</label>
+            </p>
+
+            <p>
+                <label class="text_3" for="doctor">Выберите врача:</label>
+                <select class="sel_1" id="doctor" name="doctor">
+                    <option value="therapist">Стоматолог-терапевт</option>
+                    <option value="cardiologist">Стоматолог-хирург</option>
+                    <option value="ophthalmologist">Стоматолог-ортопед</option>
+                </select>
+            </p>
+
+            <p>
+                <label class="text_3" for="symptoms">Опишите ваши симптомы:</label>
+                <textarea class="texr_1" id="symptoms" name="symptoms" placeholder="Опишите ваши cимптомы"></textarea>
+            </p>
+
+            <label class="text_4">
+                <input type="checkbox" name="agree" value="yes" required>
+                Согласен с обработкой данных
+            </label>
+
+            <button class="but_1" type="submit">Записаться</button>
+
+        </form>
+
+        <addres>
+            <p class = "text_4">Телефон справочной службы: &#9990; <a href="+79991234567">+7 (999) 123-45-67</a></p>
+        </addres>
+
+    </div>
+</body>
+
+</html>
